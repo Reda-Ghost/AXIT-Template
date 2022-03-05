@@ -1,0 +1,37 @@
+@media (max-width : 480px) {
+  /* start Navigation Bar */
+  .navigation .navbar .logo {
+    font-size: 1.65rem;
+  }
+  /* end Navigation Bar */
+  /* start Header */
+  .header .main-content {
+    text-align: center;
+  }
+  .header .main-content .main-title {
+    font-size: 2.5rem;
+  }
+  .header .main-content .main-title + p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+  .header .main-content .line {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header .main-content .line + p {
+    font-size: 0.85rem;
+  }
+  .header .main-content .download-btn {
+    font-size: 0.7rem;
+    width: 120px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header .main-content .download-btn > div:last-child {
+     line-height: 35px;
+  }
+  /* end Header */
+}
