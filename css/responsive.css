@@ -178,14 +178,28 @@
 /* start Mobile Screen Only */
 @media (max-width: 500px) {
   /* start Header */
+  .header {
+    height: 80vh;
+  }
   .header .main-content .main-title + p {
-    font-size: 18px;
+    font-size: 21px;
     line-height: 1.6;
+  }
+  .header .main-content .line + p {
+    color: #dededf;
+    line-height: 1.6;
+    font-size: 14px;
   }
   /* end Header */
   /* start Social Media */
+  .social-media .content {
+    padding: 20px;
+  }
+  .social-media .content h3 {
+    font-size: 20px;
+  }
   .social-media .content h3 + p {
-    font-size: 14px;
+    font-size: 13px;
   }
   .social-media .fonts li {
     font-size: 23px;
@@ -196,6 +210,8 @@
   .features-1 .tabs {
     display: flex;
     margin-bottom: 20px;
+    width: max-content;
+    margin: auto;
   }
   .features-1 .tab-content p {
     margin-top: 25px;
@@ -206,7 +222,15 @@
   .features-3 .feature-content {
     margin-top: 10px;
   }
+  .features-3 .feature-content p {
+    font-size: 13px;
+  }
   /* end Features */
+  /* start Process */
+  .our-process .process-content h3 {
+    font-size: 16px;
+  }
+  /* end Process */
   /* start Testimonials */
   .testimonials .testimonial-content .customer-info {
     margin-left: 20px;
@@ -223,7 +247,7 @@
   }
   /* end Contact */
 
-  
+
   .col-mobile {
     width: 100%;
   }
