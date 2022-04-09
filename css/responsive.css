@@ -180,6 +180,8 @@
   /* start Header */
   .header {
     height: 80vh;
+    background-size: cover;
+    background-position: center center;
   }
   .header .main-content .main-title + p {
     font-size: 21px;
@@ -265,3 +267,13 @@
   }
 }
 /* end Mobile Screen Only */
+
+@media (max-width: 415px) {
+  .features-1 .tabs {
+    margin-bottom: 20px;
+    width: 100%;
+}
+  .features-1 .tabs .tab {
+    width: 100%;
+  }
+}
