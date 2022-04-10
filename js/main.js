@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     // hide & show mobile navigation
     $('.mobile-nav').toggleClass('active');
-    $('body').toggleClass('active')
+    $('body').toggleClass('active');
   })
 
   $('.mobile-nav .mobile-links li a').click(function(event){

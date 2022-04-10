@@ -130,7 +130,7 @@
     margin-right: 0 !important;
   }
   .margin-sm-50 {
-    margin: 50px 0;
+    margin: 50px 0 !important;
   }
   .margin-sm-40 {
     margin: 40px 0;
@@ -146,32 +146,128 @@
 
 /* start Extra Small Screen */
 @media (max-width: 767px) {
+  /* start Header */
+  .header {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    min-height: 90vh !important;
+    background-size: cover;
+    background-position: center center;
+  }
+  .header .main-content, .header .sign-in {
+    margin-top: 0px;
+  }
+  /* end Header */
   /* start Social Media */
   .social-media .fonts li {
     font-size: 2rem;
     margin-right: 30px;
   }
   .social-media .fonts li:first-child i {
-  color: #3a589a;
+    animation: facebook infinite 2s 1s linear;
+    -webkit-animation: facebook infinite 2s 1s linear;
 }
-.social-media .fonts li:nth-child(2) i {
-  color: #01abf3;
+  .social-media .fonts li:nth-child(2) i {
+    animation: twitter infinite 2s 3s linear;
+    -webkit-animation: twitter infinite 2s 2s linear;
+  }
+  .social-media .fonts li:nth-child(3) i {
+    animation: google infinite 2s 3s linear;
+    -webkit-animation: google infinite 2s 3s linear;
 }
-.social-media .fonts li:nth-child(3) i {
-  color: #c34223;
+  .social-media .fonts li:nth-child(4) i {
+    animation: pinterest infinite 2s 4s linear;
+    -webkit-animation: pinterest infinite 2s 4s linear;
 }
-.social-media .fonts li:nth-child(4) i {
-  color: #ce2025;
+  .social-media .fonts li:nth-child(5) i {
+    animation: instagram infinite 2s 5s linear;
+    -webkit-animation: instagram infinite 2s 5s linear;
 }
-.social-media .fonts li:nth-child(5) i {
-  color: #b0298c;
+  .social-media .fonts li:nth-child(6) i {
+    animation: linkedin infinite 2s 6s linear;
+    -webkit-animation: linkedin infinite 2s 6s linear;
 }
-.social-media .fonts li:nth-child(6) i {
-  color: #0079ad;
-}
-.social-media .fonts li:last-child i {
-  color: #f3962c;
-} 
+  .social-media .fonts li:last-child i {
+    animation: wifi infinite 2s 7s linear;
+    -webkit-animation: wifi infinite 2s 7s linear;
+  } 
+  @keyframes facebook {
+    0%{
+      color: #cfc7c7;
+    }
+    50% {
+      color: #3a589a;
+    }
+    100%{
+      color: #cfc7c7;
+    }
+  }
+  @keyframes twitter {
+    0%{
+      color: #cfc7c7;
+    }
+    50% {
+      color: #01abf3;
+    }
+    100%{
+      color: #cfc7c7;
+    }
+  }
+  @keyframes google {
+    0%{
+      color: #cfc7c7;
+    }
+    50% {
+      color: #c34223;
+    }
+    100%{
+      color: #cfc7c7;
+    }
+  }
+  @keyframes pinterest {
+    0%{
+      color: #cfc7c7;
+    }
+    50% {
+      color: #ce2025;
+    }
+    100%{
+      color: #cfc7c7;
+    }
+  }
+  @keyframes instagram {
+    0%{
+      color: #cfc7c7;
+    }
+    50% {
+      color: #b0298c;
+    }
+    100%{
+      color: #cfc7c7;
+    }
+  }
+  @keyframes linkedin {
+    0%{
+      color: #cfc7c7;
+    }
+    50% {
+      color: #0079ad;
+    }
+    100%{
+      color: #cfc7c7;
+    }
+  }
+  @keyframes wifi {
+    0%{
+      color: #cfc7c7;
+    }
+    50% {
+      color: #f3962c;
+    }
+    100%{
+      color: #cfc7c7;
+    }
+  }
   /* end Social Media */
   /* start Testimonials */
   .testimonials .title h2 {
@@ -201,12 +297,13 @@
   /* start Header */
   .header {
     padding-bottom: 80px;
-    min-height: 80vh !important;
+    padding-top: 80px;
+    min-height: 90vh !important;
     background-size: cover;
     background-position: center center;
   }
-  .header .main-content {
-    margin-top: 80px;
+  .header .main-content, .header .sign-in {
+    margin-top: 0px;
   }
   .header .main-content .main-title + p {
     font-size: 21px;
@@ -294,10 +391,13 @@
 /* end Mobile Screen Only */
 
 @media (max-width: 415px) {
+  .download-btn-left {
+    width: 120px;
+  }
   .features-1 .tabs {
     margin-bottom: 20px;
     width: 100%;
-}
+  }
   .features-1 .tabs .tab {
     width: 100%;
   }

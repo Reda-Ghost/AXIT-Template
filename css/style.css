@@ -67,9 +67,7 @@ body.active {
 /* start Mobile Nav */
 /* end Mobile Nav */
 .mobile-nav {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
+  padding: 30px 0;
   color: white;
   position: fixed;
   width: 100%;
@@ -89,7 +87,7 @@ body.active {
   left: 0;
 }
 .mobile-nav .mobile-links {
-  margin-top: -40px;
+  margin-top: 20px;
 }
 .mobile-nav .mobile-links li {
   margin-bottom: 50px;
@@ -140,6 +138,17 @@ body.active {
   -ms-border-radius: 0 ;
   -o-border-radius: 0 ;
   background-color: var(--mainColor);
+}
+.mobile-nav .btns-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.mobile-nav .btns-container > div {
+  margin-top: 0;
+}
+.mobile-btn-sign:hover div:last-child {
+  color: #333333;
 }
 /* end Navigation Bar */
 /* start Header */
@@ -318,6 +327,7 @@ body.active {
 .social-icons li:last-child i:hover {
   color: #f3962c;
 } 
+
 /* end Social Media */
 /* start Tabs Bar */
 .features-1 {
@@ -616,7 +626,8 @@ body.active {
 /* start Custom Section */
 .custom {
   color: white;
-  background: url(../img/Custom\ Panel.png) fixed center center;
+  background: url(../img/Custom\ Panel.png) fixed no-repeat center center;
+  background-size: 100% 100%;
 }
 .custom .title h2{
   color: white;
