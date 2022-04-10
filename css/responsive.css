@@ -150,7 +150,7 @@
   .header {
     padding-bottom: 100px;
     padding-top: 100px;
-    min-height: 80vh !important;
+    min-height: 90vh !important;
     background-size: cover;
     background-position: center center;
   }
@@ -298,7 +298,7 @@
   .header {
     padding-bottom: 80px;
     padding-top: 80px;
-    min-height: 90vh !important;
+    min-height: 80vh !important;
     background-size: cover;
     background-position: center center;
   }
